@@ -33,9 +33,17 @@ main {
 	margin-top: 10%;
 }
 
+main h1 {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .container {
 	width: 100%;
-	height: fit-content;
+	height: 60vh;
+	overflow-y: scroll;
 }
 
 li {
@@ -105,17 +113,20 @@ ul {
 }
 
 .add_icon {
+	position: relative;
+	z-index: 10;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: white;
 	font-weight: 300;
-	font-size: 70px;
 	position: absolute;
 	bottom: 3%;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 130px; height: 130px;
+	width: 10vw; height: 10vw;
+	font-size: 5vw;
+	max-width: 100px; max-height: 100px;
 	border-radius: 50%;
 	border: 1px solid var(--vivid-sky-blue);
 	background: var(--sky-blue);
@@ -125,9 +136,10 @@ ul {
 .add_bar {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	border-radius: 25px;
-	width: 80%;
+	width: 80%; height: 10vh;
+	min-height: 100px;
 	position: absolute;
 	bottom: 3%;
 	left: 50%;
@@ -136,14 +148,12 @@ ul {
 }
 
 .add_bar input {
-	width: 85%;
 	border: 1px solid var(--vivid-sky-blue);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	font-size: 30px;
 	background: var(--brigth);
-	margin: 30px 40px;
 	padding: 20px 40px;
-	height: 78px;
+	height: 60%; width: 85%;
 	border-radius: 100px;
 	color: var(--grey);
 }
@@ -154,10 +164,9 @@ ul {
 	justify-content: center;
 	color: var(--sky-blue);
 	font-weight: 300;
-	font-size: 75px;
-	width: 8vw; height: 7.5vw;
-	max-width: 100px; max-height: 100px;
-	margin-right: 5vw;
+	height: 10vw; width: 10vw;
+	max-width: 70px; max-height: 70px;
+	font-size: 5vw;
 	border-radius: 50%;
 	border: 1px solid white;
 	background: white;
@@ -179,15 +188,19 @@ ul {
   
 .show_icon {
 	opacity: 1;
-	transition: opacity 0.1s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	display: flex;
 }
   
 .hide_icon {
 	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
+	display: none;
+	transition: display 0.5s ease-in-out;
 }
 
 .delete {
+	position: relative;
+	z-index: 11;
 	display: none;
 	align-items: center;
 	justify-content: center;
@@ -198,7 +211,8 @@ ul {
 	bottom: 3%;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 130px; height: 130px;
+	width: 10vw; height: 10vw;
+	max-width: 100px; max-height: 100px;
 	border-radius: 50%;
 	border: 1px solid rgb(255, 33, 33);
 	background: rgb(187, 34, 34);
