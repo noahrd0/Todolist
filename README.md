@@ -2,7 +2,7 @@
 
 A simple and interactive ToDo List web application with drag-and-drop functionality, animations, and more.
 
-![TodoList App Demo](https://gifyu.com/image/S47dw)
+![todogif](https://github.com/noahrd0/Todolist/assets/89742552/aade8ce1-af5b-4788-915d-214f96f019bd)
 
 ## Features
 
